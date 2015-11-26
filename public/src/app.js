@@ -2,7 +2,7 @@
  * Created by med on 26/11/15.
  */
 
-angular.module("ContactApp", ["ngRoute"])
+angular.module("ContactApp", ["ngRoute", "ngResource"])
     .config(function ($routeProvider, $locationProvider) {
        $routeProvider
            .when("/contacts", {
