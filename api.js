@@ -2,12 +2,12 @@
  * Created by med on 26/11/15.
  */
 
-var express = require('express'),
-    Bourne = require('bourne'),
-    bodyParser = require('body-parser'),
+var express     = require('express'),
+    Bourne      = require('bourne'),
+    bodyParser  = require('body-parser'),
 
-    db = new Bourne('data.json'),
-    router = express.Router();
+    db          = new Bourne('data.json'),
+    router      = express.Router();
 
 router
     .use(function (req, res, next) {

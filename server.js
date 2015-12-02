@@ -8,8 +8,8 @@ var express = require('express'),
 
 app
     .use(express.static('./public'))
-    .use('./api', api)
+    .use('/api', api)
     .get('*', function(req, res) {
-       res.sendfile('public/main.html');
+       res.sendFile('/media/store/MEAN/projects/contacts_book/public/main.html');
     })
     .listen(3000);
