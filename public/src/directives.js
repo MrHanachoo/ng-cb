@@ -44,7 +44,7 @@ angular.module("ContactsApp")
                     var saveTimeout;
                     $scope.update = function () {
                         $timeout.cancel(saveTimeout);
-                        saveTimeout = $timeout($scope, blurUpdate, 1000);
+                        saveTimeout = $timeout($scope.blurUpdate, 1000);
                     };
 
 

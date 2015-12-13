@@ -10,6 +10,6 @@ app
     .use(express.static('./public'))
     .use('/api', api)
     .get('*', function(req, res) {
-       res.sendFile('/media/store/MEAN/projects/contacts_book/public/main.html');
+       res.sendFile(__dirname +'/public/main.html');
     })
     .listen(3000);
